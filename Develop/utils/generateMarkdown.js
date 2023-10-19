@@ -1,14 +1,28 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) { }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license === 'None') {
+    return '';
+  } else {
+    return '&nbsp;&nbsp;&nbsp;&nbsp;- [License](#License)\n';
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(licenses) {
+  if (licenses === 'None') {
+    return '';
+  } else {
+    return '<a id="License"></a>\n
+    ## License 📜\n
+    ${licenses}\n`';
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -21,7 +35,7 @@ ${data.description}\n
 ## Table of Contents\n
 &nbsp;&nbsp;&nbsp;&nbsp;- [Installation](#Installation)\n
 &nbsp;&nbsp;&nbsp;&nbsp;- [Usage](#Usage)\n
-&nbsp;&nbsp;&nbsp;&nbsp;- [License](#License)\n
+${renderLicenseLink(data.licenses)}
 &nbsp;&nbsp;&nbsp;&nbsp;- [Contributing](#Contributing)\n
 &nbsp;&nbsp;&nbsp;&nbsp;- [Tests](#Tests)\n
 &nbsp;&nbsp;&nbsp;&nbsp;- [Questions](#Questions)\n
@@ -34,9 +48,7 @@ In order to install, please run \`${data.installation}\`.\n
 ## Usage 🧮\n
 In order to use this app, please run \`${data.usage}\`.\n
 
-<a id="License"></a>
-## License 📜\n
-${data.licenses}\n
+${renderLicenseSection(data.licenses)}
 
 <a id="Contributing"></a>
 ## Contributing 🍴\n

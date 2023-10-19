@@ -1,10 +1,10 @@
 
-# Power Rangers
+# hi
 
 
 ## Description 📰
 
-Jason, Zack,  Billy, Trini, Kimberly.
+okay
 
 
 ## Table of Contents
@@ -28,30 +28,34 @@ Jason, Zack,  Billy, Trini, Kimberly.
 In order to install, please run `npm i`.
 
 
+<a id="Usage"></a>
 ## Usage 🧮
 
 In order to use this app, please run `npm start`.
 
 
-## License 📜
+<a id="License"></a>
 
-MIT
+    ## License 📜
+
+    MIT
 
 
+<a id="Contributing"></a>
 ## Contributing 🍴
 
 In order to contribute, one must fork their repository and create a pull request.
 
 
+<a id="Tests"></a>
 ## Tests ⚖️
 
 In order to test, please run `npm test`.
 
 
+<a id="Questions"></a>
 ## Questions 📭
 
 Please enjoy my work at my GitHub, @[mintyry](https://github.com/mintyry).
 
-For any additional inquiries, please [email me](mailto:gitmintyry@gmail.com).
-
-
+For any additional inquiries, please [email me](mailto:hi@aol.com).

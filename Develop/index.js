@@ -60,7 +60,14 @@ const questions =[
         {
             type: 'input',
             name: 'email',
-            message: 'What is your email address?'
+            message: 'What is your email address?',
+            validate: (answer) => {
+                const validEmail = answer.match(/\S+@\S+\.\S+/);
+                if (validEmail) {
+                  return true;
+                }
+                return 'Please enter an email address.';
+            }
         }
     ];
 

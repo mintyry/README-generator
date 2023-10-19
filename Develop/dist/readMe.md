@@ -1,12 +1,12 @@
 
-# one
+# idk
 
-![Github license](https://img.shields.io/badge/license-MIT-74edd1.svg)
+![Github license](https://img.shields.io/badge/license-GPL%203.0-74edd1.svg)
 
 
 ## Description 📰
 
-more
+hello
 
 
 ## Table of Contents
@@ -38,7 +38,7 @@ In order to use this app, please run `npm start`.
 
 <a id="License"></a>
  ## License 📜
-  This application is covered under the MIT license.
+  This application is covered under the GPL 3.0 license.
 
 
 <a id="Contributing"></a>
@@ -56,6 +56,6 @@ In order to test, please run `npm test`.
 <a id="Questions"></a>
 ## Questions 📭
 
-Please enjoy my work at my GitHub, @[](https://github.com/).
+Please enjoy my work at my GitHub, @[mintyry](https://github.com/mintyry).
 
-For any additional inquiries, please [email me](mailto:).
+For any additional inquiries, please [email me](mailto:hellogoodbye@hello.com).

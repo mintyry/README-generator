@@ -14,13 +14,15 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(licenses) {
-  if (licenses === 'None') {
+function renderLicenseSection(licenseAnswer) {
+  if (licenseAnswer === 'None') {
     return '';
   } else {
-    return '<a id="License"></a>\n
-    ## License 📜\n
-    ${licenses}\n`';
+    return `<a id="License"></a>\n## License 📜\n This project has the ${licenseAnswer} license.\n`;
+
+//     <a id="License"></a>
+// ## License 📜\n
+// ${data.licenses}\n
   }
 }
 

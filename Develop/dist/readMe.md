@@ -1,10 +1,10 @@
 
-# hi
+# lol
 
 
 ## Description 📰
 
-okay
+hi
 
 
 ## Table of Contents
@@ -35,11 +35,9 @@ In order to use this app, please run `npm start`.
 
 
 <a id="License"></a>
-
-    ## License 📜
-
-    MIT
-
+## License 📜
+ MIT
+;
 
 <a id="Contributing"></a>
 ## Contributing 🍴
@@ -56,6 +54,6 @@ In order to test, please run `npm test`.
 <a id="Questions"></a>
 ## Questions 📭
 
-Please enjoy my work at my GitHub, @[mintyry](https://github.com/mintyry).
+Please enjoy my work at my GitHub, @[](https://github.com/).
 
-For any additional inquiries, please [email me](mailto:hi@aol.com).
+For any additional inquiries, please [email me](mailto:).

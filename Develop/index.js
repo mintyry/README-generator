@@ -42,7 +42,7 @@ const questions =[
             type: 'input',
             name: 'collab',
             message: 'If a collab, how does one contribute to repo?',
-            default: 'Fork repo and create pull request'
+            default: 'fork their repository and create a pull request'
         },
         {
             type: 'input',
@@ -64,7 +64,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then(function (data){
-            fs.writeFile('readMe.md', generateMarkdown(data), function(err){
+            fs.writeFile('./dist/readMe.md', generateMarkdown(data), function(err){
                 if (err) {
                     console.error(err);
                 }

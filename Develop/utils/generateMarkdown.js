@@ -50,8 +50,6 @@ In order to test, please run \`${data.tests}\`.\n
 ## Questions 📭\n
 Please enjoy my work at my GitHub, @[${data.github}](https://github.com/${data.github}).\n
 For any additional inquiries, please [email me](mailto:${data.email}).
-
-
 `;
 }
 

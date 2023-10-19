@@ -15,22 +15,10 @@ const questions =[
             message: 'Please provide a short description of this project (what, why, and how).'
         },
         {
-            type: 'list',
-            name: 'licenses',
-            message: 'What kind of license should your project have?',
-            choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
-        },
-        {
             type: 'input',
             name: 'installation',
             message: 'What command should be run to install dependencies?',
             default: 'npm i'
-        },
-        {
-            type: 'input',
-            name: 'tests',
-            message: 'What command should be run to conduct tests?',
-            default: 'npm test'
         },
         {
             type: 'input',
@@ -39,10 +27,22 @@ const questions =[
             default: 'npm start' //is this correct?
         },
         {
+            type: 'list',
+            name: 'licenses',
+            message: 'What kind of license should your project have?',
+            choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
+        },
+        {
             type: 'input',
             name: 'collab',
             message: 'If a collab, how does one contribute to repo?',
             default: 'fork their repository and create a pull request'
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'What command should be run to conduct tests?',
+            default: 'npm test'
         },
         {
             type: 'input',

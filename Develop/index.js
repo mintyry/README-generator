@@ -2,17 +2,24 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js')
+
+const validateAnswer = (answer) => {
+    return answer.length < 1 ? "Please submit an answer." : true;
+  };
+
 // TODO: Create an array of questions for user input
 const questions =[
         {
             type: 'input',
             name: 'appName',
-            message: 'What is the name of your app?'
+            message: 'What is the name of your app?',
+            validate: (answer) => validateAnswer(answer)
         },
         {
             type: 'input',
             name: 'description',
-            message: 'Please provide a short description of this project (what, why, and how).'
+            message: 'Please provide a short description of this project (what, why, and how).',
+            validate: (answer) => validateAnswer(answer)
         },
         {
             type: 'input',
@@ -47,7 +54,8 @@ const questions =[
         {
             type: 'input',
             name: 'github',
-            message: 'What is your GitHub username?'
+            message: 'What is your GitHub username?',
+            validate: (answer) => validateAnswer(answer)
         },
         {
             type: 'input',

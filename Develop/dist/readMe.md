@@ -1,25 +1,27 @@
 
-# lol
+# one
+
+![Github license](https://img.shields.io/badge/license-MIT-74edd1.svg)
 
 
 ## Description 📰
 
-hi
+more
 
 
 ## Table of Contents
 
-&nbsp;&nbsp;&nbsp;&nbsp;- [Installation](#Installation)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Installation](#Installation)
 
-&nbsp;&nbsp;&nbsp;&nbsp;- [Usage](#Usage)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Usage](#Usage)
 
-&nbsp;&nbsp;&nbsp;&nbsp;- [License](#License)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [License](#License)
 
-&nbsp;&nbsp;&nbsp;&nbsp;- [Contributing](#Contributing)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Contributing](#Contributing)
 
-&nbsp;&nbsp;&nbsp;&nbsp;- [Tests](#Tests)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Tests](#Tests)
 
-&nbsp;&nbsp;&nbsp;&nbsp;- [Questions](#Questions)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Questions](#Questions)
 
 
 <a id="Installation"></a>
@@ -35,9 +37,9 @@ In order to use this app, please run `npm start`.
 
 
 <a id="License"></a>
-## License 📜
- MIT
-;
+ ## License 📜
+  This application is covered under the MIT license.
+
 
 <a id="Contributing"></a>
 ## Contributing 🍴

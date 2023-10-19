@@ -1,6 +1,12 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) { }
+function renderLicenseBadge(license) {
+  if (license === 'None') {
+    return '';
+  } else {
+    return `![Github license](https://img.shields.io/badge/license-${license.replace(/ /g,'%20')}-74edd1.svg)`;
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -8,7 +14,7 @@ function renderLicenseLink(license) {
   if (license === 'None') {
     return '';
   } else {
-    return '&nbsp;&nbsp;&nbsp;&nbsp;- [License](#License)\n';
+    return '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [License](#License)\n';
   }
 }
 
@@ -18,11 +24,7 @@ function renderLicenseSection(licenseAnswer) {
   if (licenseAnswer === 'None') {
     return '';
   } else {
-    return `<a id="License"></a>\n## License 📜\n This project has the ${licenseAnswer} license.\n`;
-
-//     <a id="License"></a>
-// ## License 📜\n
-// ${data.licenses}\n
+    return `<a id="License"></a>\n ## License 📜\n  This application is covered under the ${licenseAnswer} license.\n`;
   }
 }
 
@@ -30,17 +32,18 @@ function renderLicenseSection(licenseAnswer) {
 function generateMarkdown(data) {
   return `
 # ${data.appName}\n
+${renderLicenseBadge(data.licenses)}\n
 
 ## Description 📰\n
 ${data.description}\n
 
 ## Table of Contents\n
-&nbsp;&nbsp;&nbsp;&nbsp;- [Installation](#Installation)\n
-&nbsp;&nbsp;&nbsp;&nbsp;- [Usage](#Usage)\n
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Installation](#Installation)\n
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Usage](#Usage)\n
 ${renderLicenseLink(data.licenses)}
-&nbsp;&nbsp;&nbsp;&nbsp;- [Contributing](#Contributing)\n
-&nbsp;&nbsp;&nbsp;&nbsp;- [Tests](#Tests)\n
-&nbsp;&nbsp;&nbsp;&nbsp;- [Questions](#Questions)\n
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Contributing](#Contributing)\n
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Tests](#Tests)\n
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Questions](#Questions)\n
 
 <a id="Installation"></a>
 ## Installation 🔌\n

@@ -53,6 +53,12 @@ const questions =[
         },
         {
             type: 'input',
+            name: 'credits',
+            message: 'Please give credit to any third-party assets or collaborators.',
+            default: 'N/A'
+        },
+        {
+            type: 'input',
             name: 'github',
             message: 'What is your GitHub username?',
             validate: (answer) => validateAnswer(answer)
@@ -79,7 +85,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then(function (data){
-            fs.writeFile('./dist/readMe.md', generateMarkdown(data), function(err){
+            fs.writeFile('./dist/README.md', generateMarkdown(data), function(err){
                 if (err) {
                     console.error(err);
                 }

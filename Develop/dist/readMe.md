@@ -1,12 +1,12 @@
 
-# idk
+# hey
 
-![Github license](https://img.shields.io/badge/license-GPL%203.0-74edd1.svg)
+
 
 
 ## Description 📰
 
-hello
+arnold
 
 
 ## Table of Contents
@@ -15,11 +15,11 @@ hello
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Usage](#Usage)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [License](#License)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Contributing](#Contributing)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Tests](#Tests)
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Questions](#Questions)
 
@@ -36,9 +36,6 @@ In order to install, please run `npm i`.
 In order to use this app, please run `npm start`.
 
 
-<a id="License"></a>
- ## License 📜
-  This application is covered under the GPL 3.0 license.
 
 
 <a id="Contributing"></a>
@@ -53,9 +50,11 @@ In order to contribute, one must fork their repository and create a pull request
 In order to test, please run `npm test`.
 
 
+
+
 <a id="Questions"></a>
 ## Questions 📭
 
-Please enjoy my work at my GitHub, @[mintyry](https://github.com/mintyry).
+Please enjoy my work at my GitHub, @[jo](https://github.com/jo).
 
-For any additional inquiries, please [email me](mailto:hellogoodbye@hello.com).
+For any additional inquiries, please [email me](mailto:lol@lol.com).

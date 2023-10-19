@@ -28,6 +28,22 @@ function renderLicenseSection(licenseAnswer) {
   }
 }
 
+function renderCredsLink(cred){
+  if (cred === 'N/A') {
+    return '';
+  } else {
+    return '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Credits](#Credits)\n';
+  }
+}
+
+function renderCredsSection(cred) {
+  if (cred === 'N/A') {
+    return '';
+  } else {
+    return `<a id="Credits"></a>\n ## Credits 🤝\n  ${cred}\n`;
+  }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
@@ -43,6 +59,7 @@ ${data.description}\n
 ${renderLicenseLink(data.licenses)}
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Contributing](#Contributing)\n
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Tests](#Tests)\n
+${renderCredsLink(data.credits)}
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Questions](#Questions)\n
 
 <a id="Installation"></a>
@@ -62,6 +79,8 @@ In order to contribute, one must ${data.collab}.\n
 <a id="Tests"></a>
 ## Tests ⚖️\n
 In order to test, please run \`${data.tests}\`.\n
+
+${renderCredsSection(data.credits)}
 
 <a id="Questions"></a>
 ## Questions 📭\n

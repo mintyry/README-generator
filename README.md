@@ -11,6 +11,8 @@ I was motivated to make this app in order to have an easier way to make README f
 This solves the problem of time and effort that can now be more focused on actual coding.
 In making this, I learned how to invoke (require) different modules, how to pass info both to a function and pass it back into the original instance of the function call (ie: generateMarkdown()). I also got an introduction to new folder structures.
 
+In making this app, I also wanted to ensure the user enters answers, so I've installed checks to see if user does, and if user does not, they will be prompted to do so.
+
 
 ## Table of Contents
 

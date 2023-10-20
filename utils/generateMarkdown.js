@@ -24,7 +24,9 @@ function renderLicenseSection(licenseAnswer) {
   if (licenseAnswer === 'None') {
     return '';
   } else {
-    return `<a id="License"></a>\n ## License 📜\n  This application is covered under the ${licenseAnswer} license.\n`;
+    return `<a id="License"></a>\n 
+## License 📜\n  
+This application is covered under the ${licenseAnswer} license.\n`;
   }
 }
 

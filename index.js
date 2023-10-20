@@ -98,6 +98,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then(function (data){
+            console.log(data);
             // writes a README file to the dist folder; calls generateMarkdown function to pass in data from that exported file.
             fs.writeFile('./dist/README.md', generateMarkdown(data), function(err){
                 if (err) {

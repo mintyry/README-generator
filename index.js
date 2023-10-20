@@ -4,7 +4,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
-//This function checks if user is enterting an answer in the app.
+//This function checks if user is actually enterting an answer in the app.
 const validateAnswer = (answer) => {
     return answer.length < 1 ? "Please submit an answer." : true;
   };
@@ -39,7 +39,7 @@ const questions =[
             type: 'input',
             name: 'usage',
             message: 'Please provide usage instructions.',
-            default: 'npm start' //is this correct?
+            default: 'npm start'
         },
         //Question for licenses section
         {
@@ -99,7 +99,7 @@ function init() {
         .prompt(questions)
         .then(function (data){
             console.log(data);
-            // writes a README file to the dist folder; calls generateMarkdown function to pass in data from that exported file.
+            // writes a README file to the dist folder; calls generateMarkdown function to pass in data from that exported module.
             fs.writeFile('./dist/README.md', generateMarkdown(data), function(err){
                 if (err) {
                     console.error(err);

@@ -1,12 +1,12 @@
 
-# lol
+# Sample README
 
 ![Github license](https://img.shields.io/badge/license-MIT-74edd1.svg)
 
 
 ## Description 📰
 
-hi
+This is the required sample README generated from this app.
 
 
 ## Table of Contents
@@ -21,6 +21,7 @@ hi
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Tests](#Tests)
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Credits](#Credits)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Questions](#Questions)
 
@@ -56,11 +57,14 @@ In order to contribute, one must fork their repository and create a pull request
 In order to test, please run `npm test`.
 
 
+<a id="Credits"></a>
+ ## Credits 🤝
+  M. Meyers
 
 
 <a id="Questions"></a>
 ## Questions 📭
 
-Please enjoy my work at my GitHub, @[hi](https://github.com/hi).
+Please enjoy my work at my GitHub, @[mintyry](https://github.com/mintyry).
 
-For any additional inquiries, please [email me](mailto:hi@lol.com).
+For any additional inquiries, please [email me](mailto:dontworry@aboutit.com).

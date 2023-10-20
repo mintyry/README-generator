@@ -43,7 +43,7 @@ In order to use this app, please run `npm start`.
 Please [watch this video](https://watch.screencastify.com/v/wwVlHYyojtDy5qeow0Hm) for a walkthrough of how to use the README Generator.
 
 Here is an image of a completely generated README with licenses and credits also opted in.
-If user doesn't have either one, those sections will simply not populate.
+If user doesn't have either one, those sections and their corresponding content will simply not populate.
 
 ![A sample generated README with license and credit](./images/samplegenerated.png)
 

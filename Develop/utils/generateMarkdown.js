@@ -1,5 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function that returns a license badge based on which license is passed in
+// If there is no license, returns an empty string
 function renderLicenseBadge(license) {
   if (license === 'None') {
     return '';
@@ -8,8 +8,8 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function that returns the license link
+// If there is no license, returns an empty string
 function renderLicenseLink(license) {
   if (license === 'None') {
     return '';
@@ -18,8 +18,8 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Function that returns the license section of README
+// If there is no license, returns an empty string
 function renderLicenseSection(licenseAnswer) {
   if (licenseAnswer === 'None') {
     return '';
@@ -28,6 +28,8 @@ function renderLicenseSection(licenseAnswer) {
   }
 }
 
+// Function that returns the credits link
+// If there are no credits, returns an empty string
 function renderCredsLink(cred){
   if (cred === 'N/A') {
     return '';
@@ -36,6 +38,8 @@ function renderCredsLink(cred){
   }
 }
 
+// Function that returns the credits section of README
+// If there are no credits, returns an empty string
 function renderCredsSection(cred) {
   if (cred === 'N/A') {
     return '';
@@ -44,7 +48,10 @@ function renderCredsSection(cred) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// Function that generates markdown for README; using dot notation to traverse through the questions array along with user's answers
+//(ie: userData.questionName)
+// call functions from above to check if sections and its corresponding content is necessary.
+
 function generateMarkdown(data) {
   return `
 # ${data.appName}\n
@@ -89,4 +96,5 @@ For any additional inquiries, please [email me](mailto:${data.email}).
 `;
 }
 
+//This exports what is in generateMarkdown() function to index.js, which requires this file.
 module.exports = generateMarkdown;
